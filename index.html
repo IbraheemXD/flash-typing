@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/main.js" defer></script>
+    <title>Flash Typing</title>
+</head>
+
+<body>
+    <div class="loading-screen hide">
+        <div class="spinner-circle"></div>
+    </div>
+
+    <div class="container ">
+        <header class="header">
+            <h1 class="heading-primary">Flash Typing</h1>
+            <i class="fas fa-bolt flash-logo"></i>
+        </header>
+        <article class="content">
+            <div class="f-row">
+                <p class="time">00</p>
+                <p class="progress hide">&nbsp;</p>
+            </div>
+            <p class="paragraph active-paragraph ">&nbsp;</p>
+            <div class="form-group">
+                <textarea id="my-textarea" class="form-control" autofocus spellcheck="off"></textarea>
+            </div>
+
+            <div class="discription">
+                <p>Typo: <span class="typo">0</span></p>
+                <p>Accuracey: <span class="accuracey">TBD</span></p>
+                <p>Net Speed: <span class="speed">TBD</span></p>
+            </div>
+        </article>
+    </div>
+
+    <div class="result-screen hide">
+        <div class="result-card-container">
+            <div class="typo-container result-card">
+                <div class="typo-count result-card_count">
+                    <p>Typo</p>
+                    <span class="total-typo">0</span>
+                </div>
+                <img class=" result-card_img img-d1" src="/images/Zenitsu.png" alt="demonSlayer-3">
+            </div>
+
+            <div class="speed-container result-card">
+                <img class=" result-card_img img-d2" src="/images/tanjiro.png" alt="demonSlayer-1">
+                <div class="speed-count result-card_count">
+                    <p>Net Speed</p>
+                    <span class="total-netSpeed">0</span>
+                </div>
+            </div>
+            <div class="accuracey-container result-card">
+                <div class="accuracey-count result-card_count">
+                    <p>Accuracey</p>
+                    <span class="total-accuracey">0</span>
+                </div>
+                <img class=" result-card_img img-d3" src="/images/demonCorps.png" alt="demonSlayer-2">
+            </div>
+
+        </div>
+        <button class="btn btn-play"><a href="/"><i class="fas fa-redo try-logo">&nbsp;</i></a></button>
+    </div>
+
+    <div class="effect-container hide">
+        <div class="flash"></div>
+        <img class="flash-img" src="/images/Monster_Strike_Zenitsu.png" alt="demonSlayer-corps">
+    </div>
+
+</body>
+
+</html>
